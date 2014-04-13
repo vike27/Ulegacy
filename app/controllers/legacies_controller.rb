@@ -4,7 +4,7 @@ class LegaciesController < ApplicationController
 	end
 
 	def new
-		@Legacy = Legacy.new
+		@legacy = Legacy.new
 	end
 
 	def create

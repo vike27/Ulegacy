@@ -1,1 +1,105 @@
 <div> new legacy | the legacy form will go here </div>
+
+
+
+
+<%= form_for @legacy, html:{ role: "form", class: "new-legacy"} do |f| %>
+  <% if @legacy.errors.any? %>
+      <div id="error_explanation">
+          <h1><%= pluralize(@legacy.errors.count, "error") %> prohibited this from being saved:</h1>
+
+		      <ul>
+			      <% @legacy.errors.full_messages.each do |msg| %>
+			        	<li><%= msg %></li>
+			      <% end %>
+		      </ul>
+      </div>
+  <% end %>
+
+			<div class="form-group">
+			  <div class="field">
+			    <%= f.label :First_Name %><br />
+			    <%= f.text_field :first_name, class:"form-control", placeholder:"First Name" %>
+			  </div>
+
+			<div class="form-group">
+			  <div class="field">
+			    <%= f.label :Last_Name %><br />
+			    <%= f.text_field :last_name, class:"form-control", placeholder:"Last Name"  %>  
+			  </div>
+
+			  <div class="form-group">
+			  <div class="field">
+			    <%= f.label :Last_Name %><br />
+			    <%= f.text_field :last_name, class:"form-control", placeholder:"Last Name"  %>
+			  </div>
+
+			  <div class="form-group">
+			  <div class="field">
+			    <%= f.label :Last_Name %><br />
+			    <%= f.text_field :last_name, class:"form-control", placeholder:"Last Name"  %>    
+			  </div>
+
+			  <div class="form-group">
+			  <div class="field">
+			    <%= f.label :Address %><br />
+			    <%= f.text_field :address, class:"form-control", placeholder:"Adress"  %>
+			  </div>
+
+			  <div class="form-group">
+			  <div class="field">
+			    <%= f.label :City %><br />
+			    <%= f.text_field :city, class:"form-control", placeholder:"City"  %>
+			  </div>
+
+			  <div class="form-group">
+			  <div class="field">
+			    <%= f.label :State %><br />
+			    <%= f.text_field :state, class:"form-control", placeholder:"State"  %>
+			  </div>		    
+		
+			  <div class="form-group">
+			  <div class="field">
+			    <%= f.label :Zip_Code %><br />
+			    <%= f.text_field :zip_code, class:"form-control", placeholder:"Zip Code"  %>
+			  </div>
+
+			  <div class="form-group">
+			  <div class="field">
+			    <%= f.label :Gender %><br />
+			    <%= f.text_field :gender, class:"form-control", placeholder:"Gender"  %>
+			  </div>
+
+			  <div class="form-group">
+			  <div class="field">
+			    <%= f.label :DOB %><br />
+			    <%= f.date_field :date_of_birth, class:"form-control", placeholder:"DOB"  %>  
+			  </div>
+
+			  <div class="form-group">
+			  <div class="field">
+			    <%= f.label :Marital_Status %><br />
+			    <%= f.text_field :gender, class:"form-control", placeholder:"Marital Status"  %>
+			  </div>
+
+			  <div class="form-group">
+			  <div class="field">
+			    <%= f.label :Spouses_Name %><br />
+			    <%= f.text_field :gender, class:"form-control", placeholder:"Spouses Name"  %>
+			  </div>
+
+			  <div class="form-group">
+			  <div class="field">
+			    <%= f.label :Legacy_Donations %><br />
+			    <%= f.text_field :legacy_donations, class:"form-control", placeholder:"Legacy Donations"  %>
+			  </div>
+
+			  <div class="actions">
+			    <%= f.submit class:"btn btn-default new-eurekamoment-button" %>
+			  </div>
+			  <% end %>
+
+			</div>
+
+
+   
